@@ -1,6 +1,6 @@
 import './App.css';
 
-const testAddress = 'https://static.theprint.in/wp-content/uploads/2022/02/egfefrrrrrure20220jj22412412620220224134547.jpg?compress=true&quality=80&w=800&dpr=2.0'
+const testAddress = 'https://upload.wikimedia.org/wikipedia/commons/3/36/Alexandra_Daddario_%2816871413889%29_%28cropped%29.jpg'
 function App() {
   return (
     <div className="App">
