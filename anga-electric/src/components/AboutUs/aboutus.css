@@ -1,7 +1,5 @@
-.aboutUsPanel {
-    height: 600px;
-}
-
 .rightPanel {
     background-image: url('./aboutUs.jpeg');
+    height: 600px;
+    background-repeat: no-repeat;
 }
