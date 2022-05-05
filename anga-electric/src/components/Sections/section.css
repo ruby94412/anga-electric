@@ -1,0 +1,13 @@
+.icon {
+    font-size: 200px;
+}
+
+.icon :hover{
+    color: rgb(131, 128, 128);
+}
+
+.section-panel {
+    height: 400px;
+    background-color: beige;
+    padding-top: 20px;
+}

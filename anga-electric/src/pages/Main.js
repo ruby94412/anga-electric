@@ -1,10 +1,12 @@
-import Introduction from '../components/MainPageComponents/Introduction';
-import SectionPanel from '../components/SectionComponents/SectionPanel';
+import Introduction from '../components/Introduction';
+import SectionPanel from '../components/Sections';
+import AboutUs from '../components/AboutUs';
 export default () => {
     return (
         <div>
             <Introduction />
             <SectionPanel />
+            <AboutUs />
         </div>
     );
 };

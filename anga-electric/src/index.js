@@ -9,6 +9,9 @@ import {
   Route,
 } from 'react-router-dom';
 import Design from './pages/Design';
+import Services from './pages/Services';
+import Deposition from './pages/Deposition';
+import Procurement from './pages/Procurement';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +19,9 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="design" element={<Design />} />
+      <Route path="services" element={<Services />} />
+      <Route path="procurement" element={<Procurement />} />
+      <Route path="deposition" element={<Deposition />} />
     </Routes>
   </BrowserRouter>
 );
