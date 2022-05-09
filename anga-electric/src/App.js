@@ -4,6 +4,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Navigate
 } from 'react-router-dom';
 import Main from './pages/Main';
 import Design from './pages/Design';
@@ -17,6 +18,10 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route
+              path="*"
+              element={<Navigate to="/" replace />}
+          />
           <Route path="design" element={<Design />} />
           <Route path="services" element={<Services />} />
           <Route path="procurement" element={<Procurement />} />

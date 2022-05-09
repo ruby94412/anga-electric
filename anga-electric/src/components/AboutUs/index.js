@@ -9,7 +9,7 @@ export default () => {
             <Col
                 md={15}
                 xs={24}
-                style={{padding: '10%'}}
+                style={{padding: '5%'}}
             >
                 <h1>They Prioritize Profits. We Prioritize YOU.</h1>
                 <h6>OEMs have spent decades convincing IT professionals that they’

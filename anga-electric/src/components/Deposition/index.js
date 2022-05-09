@@ -9,7 +9,7 @@ export default () => {
             <div className="backgroundPanel">
                 <p style={{fontSize: '50px'}}>asdfasdfasdf</p>
             </div>
-            <ProgressSteps current={0} />
+            <ProgressSteps current={3} />
             <AboutUs />
         </div>
     );

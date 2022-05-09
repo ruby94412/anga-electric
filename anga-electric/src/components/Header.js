@@ -6,6 +6,7 @@ import {Menu} from 'antd';
 const Header = () => {
     const navigate = useNavigate();
     const items = [
+        { label: 'Home', key: ''},
         { label: 'Design', key: 'design' },
         { label: 'Procurement', key: 'procurement' },
         { label: 'Services', key: 'services' },

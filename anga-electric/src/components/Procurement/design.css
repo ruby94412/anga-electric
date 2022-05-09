@@ -1,0 +1,7 @@
+.backgroundPanel {
+    background-image: url('./designBackground.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #0e4f04;
+}

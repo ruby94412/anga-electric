@@ -21,13 +21,16 @@ export default ({
         setStatusList(temp);
     }, []);
     return (
-        <div style={{width: '500px'}}>
-            <Steps progressDot>
+        <div style={{padding: '5% 0 5% 0', display: 'flex', justifyContent: 'center'}}>
+            <div style={{width: '700px'}}>
+            <Steps current={current} labelPlacement="vertical" type="navigation">
                 <Step status={statusList[0]} description="Design" icon={<UserOutlined />} />
                 <Step status={statusList[1]} description="Procurement" icon={<SolutionOutlined />} />
                 <Step status={statusList[2]} description="Services" icon={<LoadingOutlined />} />
                 <Step status={statusList[3]} description="Deposition" icon={<SmileOutlined />} />
-            </Steps>
+                </Steps>
+            </div>
         </div>
+        
     );
 }
