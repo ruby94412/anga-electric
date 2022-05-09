@@ -1,4 +1,4 @@
-import {Row, Col} from 'antd';
+import {Row, Col, Button} from 'antd';
 import './aboutus.css';
 
 export default () => {
@@ -9,7 +9,7 @@ export default () => {
             <Col
                 md={15}
                 xs={24}
-                style={{paddingTop: '200px', paddingRight: '100px', paddingLeft: '100px'}}
+                style={{padding: '10%'}}
             >
                 <h1>They Prioritize Profits. We Prioritize YOU.</h1>
                 <h6>OEMs have spent decades convincing IT professionals that they’
@@ -21,6 +21,7 @@ export default () => {
                         The culmination of this vision is our SmartCare maintenance program, Core 4 delivers best
                         -in-class custom solutions at value pricing. It’s a win-win.
                 </span>
+                <div style={{marginTop: '20px'}}><Button type="primary">Learn More</Button></div>
             </Col>
         </Row>
     );

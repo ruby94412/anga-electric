@@ -1,11 +1,28 @@
 import './App.css';
-import Main from './pages/Main';
 import Header from './components/Header';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
+import Main from './pages/Main';
+import Design from './pages/Design';
+import Services from './pages/Services';
+import Deposition from './pages/Deposition';
+import Procurement from './pages/Procurement';
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Main />    
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="design" element={<Design />} />
+          <Route path="services" element={<Services />} />
+          <Route path="procurement" element={<Procurement />} />
+          <Route path="deposition" element={<Deposition />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
