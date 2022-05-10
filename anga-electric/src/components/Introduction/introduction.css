@@ -1,5 +1,5 @@
 .background-introduction {
-    background-image: linear-gradient(to right, #3d6d3b 30%, rgba(0, 0, 0, 0) 100%, rgba(105, 128, 105, 1) 100%), url('./schneider-introduction.png');
+    background-image: linear-gradient(to right, #b5dbb3 30%, rgba(0, 0, 0, 0) 100%, rgba(105, 128, 105, 1) 100%), url('./schneider-introduction.png');
     height: 400px;
     background-repeat: repeat;
     background-size: contain;
@@ -13,10 +13,10 @@
     font-size: 58px;
     line-height: 58px;
     font-weight: 700;
-    color: #25991f;
+    color: #124710;
 }
 
 .introduction-text a {
     font-size: 100px;
-    color: #25991f;
+    color: #124710;
 }
