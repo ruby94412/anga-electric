@@ -4,12 +4,13 @@ import './aboutus.css';
 export default () => {
     return (
         <Row className="aboutUsPanel" justify="end">
-            <Col md={9} xs={24} className="rightPanel">
+            <Col md={9} xs={24} className="leftPanel">
             </Col>
             <Col
                 md={15}
                 xs={24}
                 style={{padding: '5%'}}
+                className="rightPanel"
             >
                 <h1>They Prioritize Profits. We Prioritize YOU.</h1>
                 <h6>OEMs have spent decades convincing IT professionals that they’

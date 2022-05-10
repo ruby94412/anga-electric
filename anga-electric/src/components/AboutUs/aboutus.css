@@ -1,5 +1,11 @@
-.rightPanel {
+.leftPanel {
     background-image: url('./aboutUs.jpg');
+    height: 600px;
+    background-repeat: no-repeat;
+}
+
+.rightPanel {
+    background-color: rgb(99, 143, 99);
     height: 600px;
     background-repeat: no-repeat;
 }

@@ -1,0 +1,32 @@
+.ant-menu,.ant-menu-sub,.ant-menu-inline{
+    color: white;
+    background-color: #044d50 !important;
+  }
+  .ant-menu-submenu > .ant-menu {
+    background-color: rgb(16, 71, 83) !important;
+  }
+  .ant-menu-submenu-title{
+    color: white !important;
+  }
+  .ant-menu-inline {
+    border: none;
+  }
+  .ant-menu-item a {
+    color: white !important;
+  }
+  .ant-menu-item a:hover {
+    color: #044d50 !important;
+  }
+
+  .ant-menu-submenu-arrow {
+    color: white;
+  }
+  .ant-menu-item-selected {
+    background-color: rgb(4,77,92) !important;
+    color: white !important;
+  }
+  
+  .ant-menu-item-active {
+    background-color: #fff !important;
+    color: #666666 !important;
+  }
