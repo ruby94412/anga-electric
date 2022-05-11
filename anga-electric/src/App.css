@@ -30,6 +30,13 @@
   color: #61dafb;
 }
 
+.ant-menu {
+  background: rgb(81, 117, 59);
+  color: white;
+}
+.ant-menu-horizontal {
+  border-bottom: 1px solid rgb(81, 117, 59);
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
