@@ -1,5 +1,6 @@
 .icon {
     font-size: 200px;
+    padding-bottom: 10px;
 }
 
 .icon :hover{
@@ -7,19 +8,13 @@
 }
 
 .section-panel {
-    background-color: rgb(186, 219, 166);
+    background-color: rgb(112, 141, 87);
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
-.ant-btn-primary{
-    color: #fff;
-    background: #4a550d;
-    border-color: #4a550d;
-}
-    
-.ant-btn-primary:hover, .ant-btn-primary:focus{
-    color: #fff;
-    background: #353b12;
-    border-color: #353b12;
+.title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #0e360d;
 }

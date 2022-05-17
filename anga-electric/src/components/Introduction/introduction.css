@@ -1,5 +1,5 @@
 .background-introduction {
-    background-image: linear-gradient(to right, #b5dbb3 30%, rgba(0, 0, 0, 0) 100%, rgba(105, 128, 105, 1) 100%), url('./schneider-introduction.png');
+    background-image: linear-gradient(to right, #6b8a5d 30%, rgba(0, 0, 0, 0) 100%, rgba(105, 128, 105, 1) 100%), url('./schneider-introduction.png');
     height: 400px;
     background-repeat: repeat;
     background-size: contain;

@@ -8,7 +8,7 @@ export default ({
     title,
     icon,
     link,
-    description,
+    abstract,
 }) => {
     const navigate = useNavigate();
     const iconOnClick = () => {
@@ -19,8 +19,8 @@ export default ({
             {icon({
                 className: "icon"
             })}
-            <h2 style={{color: '#0e360d'}}>{title}</h2>
-            <span>{description}</span>
+            <h2 className="title">{title}</h2>
+            <span className="title" style={{fontSize: '15px'}}>{abstract}</span>
             <div>
                 <Button
                     type="primary"

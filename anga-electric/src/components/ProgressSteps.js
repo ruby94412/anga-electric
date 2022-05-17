@@ -27,7 +27,7 @@ export default ({
                 <Step status={statusList[0]} description="Design" icon={<UserOutlined />} />
                 <Step status={statusList[1]} description="Procurement" icon={<SolutionOutlined />} />
                 <Step status={statusList[2]} description="Services" icon={<LoadingOutlined />} />
-                <Step status={statusList[3]} description="Deposition" icon={<SmileOutlined />} />
+                <Step status={statusList[3]} description="Debug" icon={<SmileOutlined />} />
                 </Steps>
             </div>
         </div>

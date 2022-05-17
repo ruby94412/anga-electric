@@ -26,6 +26,17 @@
   color: white;
 }
 
+.ant-btn-primary{
+  color: #fff;
+  background: #4a550d;
+  border-color: #4a550d;
+}
+  
+.ant-btn-primary:hover, .ant-btn-primary:focus{
+  color: #fff;
+  background: #353b12;
+  border-color: #353b12;
+}
 .App-link {
   color: #61dafb;
 }

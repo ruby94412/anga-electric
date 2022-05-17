@@ -1,4 +1,4 @@
-import Model from './Model';
+import {useContext} from 'react';
 import {Row, Col} from 'antd';
 import {
     PoweroffOutlined as Icon1,
@@ -6,14 +6,41 @@ import {
     PhoneOutlined as Icon3,
     LeftCircleOutlined as Icon4,
 } from '@ant-design/icons';
+import Model from './Model';
+import {TextData} from '../../App';
 import './section.css';
 
 export default () => {
+    const data = useContext(TextData);
     const titles = [
-        {title: '产品设备', icon: props => <Icon1 {...props} />, link: 'design', description: '让电尽享其能'},
-        {title: '销售业绩', icon: props => <Icon2 {...props} />, link: 'procurement', description: '成功案例'},
-        {title: '售后服务', icon: props => <Icon3 {...props} />, link: 'services',  description: '解决方案服务'},
-        {title: 'Deposition', icon: props => <Icon4 {...props} />, link: 'deposition', description: 'When you’re ready to upgrade, we’re here to make the transition simple and budget friendly. We’ll buy the old to make way for the new.'},
+        {
+            title: data.design.title,
+            icon: props => <Icon1 {...props} />,
+            link: data.design.path,
+            abstract: data.design.abstract,
+            description: '让电尽享其能'
+        },
+        {
+            title: data.procurment.title,
+            icon: props => <Icon2 {...props} />,
+            link: data.procurment.path,
+            abstract: data.procurment.abstract,
+            description: '成功案例'
+        },
+        {
+            title: data.services.title,
+            icon: props => <Icon3 {...props} />,
+            link: data.services.path,
+            abstract: data.services.abstract,
+            description: '解决方案服务'
+        },
+        {
+            title: data.debug.title,
+            icon: props => <Icon4 {...props} />,
+            link: data.debug.path,
+            abstract: data.debug.abstract,
+            description: 'When you’re ready to upgrade, we’re here to make the trans'
+        },
     ];
     return (
         <Row className="section-panel" justify="space-around">
