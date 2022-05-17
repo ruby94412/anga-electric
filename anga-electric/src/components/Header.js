@@ -1,8 +1,10 @@
-import {useContext} from 'react';
+import {useContext, useState} from 'react';
 import {useNavigate} from "react-router-dom";
-import {Menu} from 'antd';
+import {Menu, Modal} from 'antd';
 import {TextData} from '../App';
+import Contact from './Contact';
 const Header = () => {
+    const [visible, setVisible] = useState(false);
     const data = useContext(TextData);
     const navigate = useNavigate();
     const items = [
@@ -11,12 +13,32 @@ const Header = () => {
         { label: data.procurment.title, key: data.procurment.path },
         { label: data.services.title, key: data.services.path },
         { label: data.debug.title, key: data.debug.path },
+        { label: '联系我们', key: 'contact'}
     ];
     const onMenuClick = ({key}) => {
-        navigate(`/${key}`);
+        if (key !== 'contact') {
+            navigate(`/${key}`);
+        } else {
+            setVisible(true);
+        }
     };
+    const onCancel = () => {
+        setVisible(false);
+    }
     return (
-        <Menu items={items} mode="horizontal" onClick={onMenuClick}/>
+        <div>
+            <Menu items={items} mode="horizontal" onClick={onMenuClick}/>
+            <Modal
+                visible={visible}
+                closable
+                centered
+                onCancel={onCancel}
+                footer={null}
+                title="联系我们"
+            >
+                <Contact onCancel={onCancel} />
+            </Modal>
+        </div>
     );
 };
 

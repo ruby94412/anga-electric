@@ -2,6 +2,7 @@
     background-image: url('./aboutUs.jpg');
     height: 600px;
     background-repeat: no-repeat;
+    background-size:100% 100%;
 }
 
 .rightPanel {
