@@ -10,12 +10,16 @@ const defaultDescription = 'We started Core 4 because we saw how OEMs pushed exp
 + 'The culmination of this vision is our SmartCare maintenance program, Core 4 delivers best'
 + '-in-class custom solutions at value pricing. It’s a win-win.'
 export default ({
-    title,
+    abstract,
+    path,
     description
 }) => {
+    const rightPanelClassname = () => {
+        return path ? `leftPanel-${path}` : 'leftPanel';
+    }
     return (
         <Row className="aboutUsPanel" justify="end">
-            <Col md={9} xs={24} className="leftPanel">
+            <Col md={9} xs={24} className={rightPanelClassname()}>
             </Col>
             <Col
                 md={15}
@@ -23,10 +27,10 @@ export default ({
                 style={{padding: '5%'}}
                 className="rightPanel"
             >
-                <h1>{title || defaultTitle}</h1>
+                <h1>{abstract || defaultTitle}</h1>
                 <h6></h6>
                 <span>{description || defaultDescription}</span>
-                <div style={{marginTop: '20px'}}><Button type="primary">Learn More</Button></div>
+                {!abstract && <div style={{marginTop: '20px'}}><Button type="primary">Learn More</Button></div>}
             </Col>
         </Row>
     );

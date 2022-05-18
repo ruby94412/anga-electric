@@ -8,11 +8,10 @@ export default () => {
     const data = useContext(TextData);
     return (
         <div>
-            <div className="backgroundPanel">
-                <p style={{fontSize: '50px'}}>asdfasdfasdf</p>
+            <div className="backgroundPanel-design">
             </div>
             <ProgressSteps current={0} />
-            <AboutUs title={data.design.abstract} description={data.design.description} />
+            <AboutUs {...data.design} />
         </div>
     );
 }

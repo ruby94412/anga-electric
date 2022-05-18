@@ -1,10 +1,10 @@
 import {useContext} from 'react';
 import {Row, Col} from 'antd';
 import {
-    PoweroffOutlined as Icon1,
-    TrophyOutlined as Icon2,
-    PhoneOutlined as Icon3,
-    LeftCircleOutlined as Icon4,
+    FormOutlined as Icon1,
+    SelectOutlined as Icon2,
+    ApiOutlined as Icon3,
+    DashboardOutlined as Icon4,
 } from '@ant-design/icons';
 import Model from './Model';
 import {TextData} from '../../App';

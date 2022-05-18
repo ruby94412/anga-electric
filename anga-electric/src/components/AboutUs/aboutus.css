@@ -10,3 +10,10 @@
     height: 600px;
     background-repeat: no-repeat;
 }
+
+.leftPanel-design {
+    background-image: url('./electricaldesign.jpeg');
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
