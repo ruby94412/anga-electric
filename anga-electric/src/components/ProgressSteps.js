@@ -30,11 +30,11 @@ export default ({
     return (
         <div style={{padding: '5% 0 5% 0', display: 'flex', justifyContent: 'center'}}>
             <div style={{width: '700px'}}>
-            <Steps current={current} labelPlacement="vertical" type="navigation">
-                <Step status={statusList[0]} description={data.design.title} icon={<Icon1 />} />
-                <Step status={statusList[1]} description={data.procurment.title} icon={<Icon2 />} />
-                <Step status={statusList[2]} description={data.services.title} icon={<Icon3 />} />
-                <Step status={statusList[3]} description={data.debug.title} icon={<Icon4 />} />
+                <Steps current={current} labelPlacement="vertical">
+                    <Step status={statusList[0]} description={data.design.title} icon={<Icon1 />} />
+                    <Step status={statusList[1]} description={data.procurment.title} icon={<Icon2 />} />
+                    <Step status={statusList[2]} description={data.services.title} icon={<Icon3 />} />
+                    <Step status={statusList[3]} description={data.debug.title} icon={<Icon4 />} />
                 </Steps>
             </div>
         </div>
