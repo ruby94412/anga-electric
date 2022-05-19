@@ -24,7 +24,6 @@ export default ({
             <Col
                 md={15}
                 xs={24}
-                style={{padding: '5%'}}
                 className="rightPanel"
             >
                 <h1>{abstract || defaultTitle}</h1>

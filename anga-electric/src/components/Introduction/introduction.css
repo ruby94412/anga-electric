@@ -1,22 +1,27 @@
 .background-introduction {
-    background-image: linear-gradient(to right, #6b8a5d 30%, rgba(0, 0, 0, 0) 100%, rgba(105, 128, 105, 1) 100%), url('./schneider-introduction.png');
-    height: 400px;
-    background-repeat: repeat;
-    background-size: contain;
-    color: #124710;
+    background-image: linear-gradient(to right, #6b8a5d 30%, rgba(0, 0, 0, 0) 100%, rgba(105, 128, 105, 1) 100%), url('./mainPage1.jpg');
+    height: 600px;
+    /* background-repeat: repeat; */
+    /* background-size: 50% 100%; */
+    /* color: #124710; */
     text-align: start;
     padding-left: 15%;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
 .introduction-text {
     font-size: 58px;
     line-height: 58px;
     font-weight: 700;
-    color: #124710;
+    color: white;
 }
 
 .introduction-text a {
     font-size: 100px;
-    color: #124710;
+    color: white;
+}
+
+.introduction-text a:hover {
+    font-size: 100px;
+    color: white;
 }

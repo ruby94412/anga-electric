@@ -49,7 +49,7 @@ export const ContactUs = ({
                 </Row>
             </form>
             <div style={{textAlign: 'center', padding: '10px'}}>
-                <ReactSimpleVerify width={455} success={onVerficationComplete} ref={verify} />
+                <ReactSimpleVerify width={300} success={onVerficationComplete} ref={verify} />
                 <Button
                     style={{marginTop: '20px'}}
                     type="primary"

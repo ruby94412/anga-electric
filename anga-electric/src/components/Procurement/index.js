@@ -9,10 +9,9 @@ export default () => {
     return (
         <div>
             <div className="backgroundPanel">
-                <p style={{fontSize: '50px'}}>asdfasdfasdf</p>
             </div>
             <ProgressSteps current={1} />
-            <AboutUs title={data.procurment.abstract} description={data.procurment.description} />
+            <AboutUs {...data.procurment} />
         </div>
     );
 }
