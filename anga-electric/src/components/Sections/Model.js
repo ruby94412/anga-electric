@@ -16,7 +16,7 @@ export default ({
         navigate(`/${link}`);
     };
     return (
-        <div style={{paddingTop: '20px', paddingBottom: '20px', color: '#204619'}}>
+        <div style={{paddingTop: '20px', paddingBottom: '20px', color: 'white'}}>
             {icon({
                 className: "icon",
                 onClick: iconOnClick,

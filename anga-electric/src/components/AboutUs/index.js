@@ -1,35 +1,80 @@
-import {Row, Col, Button} from 'antd';
+import {Row, Col, Typography} from 'antd';
 import './aboutus.css';
 
 
-const defaultTitle = 'They Prioritize Profits. We Prioritize YOU.';
-const defaultDescription = 'We started Core 4 because we saw how OEMs pushed expensive'
-+ 'equipment and bulky service plans on customers and knew there was a better way. '
-+ 'By leveraging our 25+ years of industry experience and wide network of hardware suppliers, '
-+ 'we could create custom solutions to give customers exactly what they needed.'
-+ 'The culmination of this vision is our SmartCare maintenance program, Core 4 delivers best'
-+ '-in-class custom solutions at value pricing. It’s a win-win.'
-export default ({
-    abstract,
-    path,
-    description
-}) => {
-    const rightPanelClassname = () => {
-        return path ? `leftPanel-${path}` : 'leftPanel';
-    }
+const defaultTitle = '一句话总结介绍这个公司';
+const defaultDescription = '一段简介介绍经营的范围、业务、产品、服务44一段简介介绍经营的范围、'
++ '业务、产品、服23务一段简介介绍经营的范围、业务、产品、服123务一段简介介绍经营的范围、业务、产品、服'
++ '务一段简介介绍经营的范围、业务、产品、服务一段简介介绍经营的435345范围、业务、产品、服务'
+const defaultData = '';
+
+export default () => {
+    const {Title, Text} = Typography;
+    const getSortedArray = s => {
+        let i = 0;
+        const rst = [];
+        let cur = '';
+        while (i < s.length) {
+            if (!Number.isInteger(Number.parseInt(s.charAt(i)))) {
+                cur += s.substring(i, ++i);
+            }
+            else {
+                if (cur) {
+                    rst.push({
+                        text: cur,
+                        isNumber: false,
+                    });
+                    cur = '';
+                }
+                while(Number.isInteger(Number.parseInt(s.charAt(i))) && i < s.length){
+                    cur += s.substring(i, ++i);
+                }
+                rst.push({
+                    text: cur,
+                    isNumber: true,
+                });
+                cur = '';
+            }
+        }
+        if (cur) {
+            rst.push({
+                text: cur,
+                isNumber: false,
+            });
+        }
+        return rst;
+    };
+    
+    const getHighlightedDataDisplay = s => {
+        const arr = getSortedArray(s);
+        return (
+            <>
+                {
+                    arr.map((item, index) => (
+                        <Text
+                            key={index}
+                            className={item.isNumber ? 'numberText' : 'normalText'}
+                            style={{color: 'white'}}
+                        >
+                                {item.text}
+                        </Text>
+                    ))
+                }
+            </>
+        );
+    };
+
     return (
         <Row className="aboutUsPanel" justify="end">
-            <Col md={9} xs={24} className={rightPanelClassname()}>
+            <Col md={9} xs={24} className="leftPanel">
             </Col>
             <Col
                 md={15}
                 xs={24}
-                className="rightPanel"
+                className="rightPanel-aboutUs"
             >
-                <h1>{abstract || defaultTitle}</h1>
-                <h6></h6>
-                <span>{description || defaultDescription}</span>
-                {!abstract && <div style={{marginTop: '20px'}}><Button type="primary">Learn More</Button></div>}
+                <Title style={{color: 'white'}}>{defaultTitle}</Title>
+                {getHighlightedDataDisplay(defaultDescription)}
             </Col>
         </Row>
     );

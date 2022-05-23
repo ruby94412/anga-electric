@@ -1,0 +1,24 @@
+.backgroundPanel-procurement {
+    background-image: url('./procurementHeader.jpg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #0e4f04;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftPanel-procurement {
+    background-image: url('./procurement.jpeg');
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+}
+
+.rightPanel-procurement {
+    background-color: rgb(169, 204, 155);
+    padding: 150px 5% 50px 5%;
+    height: 500px;
+}

@@ -1,6 +1,6 @@
-.backgroundPanel-design {
-    background-image: url('./design2.jpeg');
-    height: 500px;
+.backgroundPanel-debug {
+    background-image: url('./designBackground.jpg');
+    height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
     color: #0e4f04;
@@ -9,13 +9,13 @@
     justify-content: center;
 }
 
-.rightPanel-design {
+.rightPanel-debug {
     background-color: rgb(169, 204, 155);
-    padding: 100px 5% 50px 5%;
+    padding: 150px 5% 50px 5%;
     height: 500px;
 }
 
-.leftPanel-design {
+.leftPanel-debug {
     background-image: url('./design.jpeg');
     height: 500px;
     background-repeat: no-repeat;

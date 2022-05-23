@@ -1,0 +1,17 @@
+.progress-step-background {
+    width: 400px;
+    background-color: rgba(135, 163, 118, 0.7);
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+#progress-step-icon-1, #progress-step-icon-2, #progress-step-icon-3, #progress-step-icon-4 {
+    font-size: 35px;
+    color: white;
+}
+
+#progress-step-icon-1-finished, #progress-step-icon-2-finished, #progress-step-icon-3-finished, #progress-step-icon-4-finished {
+    font-size: 35px;
+    color: #3e3f42;
+}
