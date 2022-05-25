@@ -11,7 +11,7 @@ export default () => {
     const data = useContext(TextData);
     const {abstract, description} = data.debug;
     return (
-        <div>
+        <>
             <div className="backgroundPanel-debug">
                 <ProgressSteps current={3} />
             </div>
@@ -20,7 +20,7 @@ export default () => {
                     md={15}
                     xs={24}
                 >
-                    <Carousel autoplay>
+                    <Carousel autoplay autoplaySpeed={10000}>
                         <div className="rightPanel-design">
                             <h1>{abstract}</h1>
                             <h6></h6>
@@ -40,6 +40,6 @@ export default () => {
                 <Col md={9} xs={24} className="leftPanel-debug">
                 </Col>
             </Row>
-        </div>
+        </>
     );
 }

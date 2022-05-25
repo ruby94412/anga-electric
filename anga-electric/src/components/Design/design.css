@@ -1,5 +1,5 @@
 .backgroundPanel-design {
-    background-image: url('./design2.jpeg');
+    background-image: url('../../images/design/design-header-background.jpeg');
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,15 +9,30 @@
     justify-content: center;
 }
 
-.rightPanel-design {
+.carousel-panel {
     background-color: rgb(169, 204, 155);
-    padding: 100px 5% 50px 5%;
-    height: 500px;
 }
 
-.leftPanel-design {
-    background-image: url('./design.jpeg');
+.left-panel-design-text {
+    /* background-color: rgb(169, 204, 155); */
+    padding: 0 5% 0 5%;
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.left-panel-design-image {
+    /* background-color: rgb(169, 204, 155); */
+    padding: 0 5% 0 5%;
+    height: 500px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-panel-design {
+    background-image: url('../../images/design/design-right-panel.jpeg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
 }

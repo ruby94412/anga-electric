@@ -1,14 +1,13 @@
 .leftPanel {
     background-image: url('./mainPage2.jpeg');
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 .rightPanel-aboutUs {
     background-color: rgb(169, 204, 155);
     padding: 50px 5% 50px 5%;
-    height: 500px;
 }
 
 .normalText {

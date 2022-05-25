@@ -1,11 +1,11 @@
+/* eslint-disable import/no-anonymous-default-export */
 import {useContext} from 'react';
-import {Row, Col, Carousel} from 'antd';
+import {Row, Col, Carousel, Image} from 'antd';
 import ProgressSteps from '../ProgressSteps';
 import {TextData} from '../../App';
 import './design.css';
-import test1 from '../test1.jpg';
-import test2 from '../test2.jpeg';
-import test3 from '../test3.jpeg';
+import design_1 from '../../images/design/design-carousel-1.jpeg'
+import design_2 from '../../images/design/design-carousel-2.jpeg'
 
 export default () => {
     const data = useContext(TextData);
@@ -20,24 +20,21 @@ export default () => {
                     md={15}
                     xs={24}
                 >
-                    <Carousel autoplay>
-                        <div className="rightPanel-design">
+                    <Carousel className="carousel-panel">
+                        <div className="left-panel-design-text">
                             <h1>{abstract}</h1>
-                            <h6></h6>
+                            {/* <h6></h6> */}
                             <span>{description}</span>
                         </div>
-                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                            <img src={test1} width={400} height={400}/>
+                        <div className="left-panel-design-image">
+                            <Image width={400} src={design_1} />
                         </div>
-                        <div>
-                            <img src={test2} width={400} height={400}/>
-                        </div>
-                        <div>
-                            <img src={test3} width={400} height={400}/>
+                        <div className="left-panel-design-image">
+                            <Image width={400} src={design_2} />
                         </div>
                     </Carousel>
                 </Col>
-                <Col md={9} xs={24} className="leftPanel-design">
+                <Col md={9} xs={24} className="right-panel-design">
                 </Col>
             </Row>
         </div>
