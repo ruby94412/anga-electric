@@ -1,11 +1,13 @@
+/* eslint-disable import/no-anonymous-default-export */
 import {useContext} from 'react';
-import {Row, Col, Carousel} from 'antd';
+import {Row, Col, Carousel, Image} from 'antd';
 import ProgressSteps from '../ProgressSteps';
 import {TextData} from '../../App';
 import './services.css';
-import test1 from '../test1.jpg';
-import test2 from '../test2.jpeg';
-import test3 from '../test3.jpeg';
+import services_1 from '../../images/services/services-carousel-1.jpeg';
+import services_2 from '../../images/services/services-carousel-2.jpeg';
+import services_3 from '../../images/services/services-carousel-3.jpeg';
+import services_4 from '../../images/services/services-carousel-4.jpeg';
 
 export default () => {
     const data = useContext(TextData);
@@ -20,24 +22,26 @@ export default () => {
                     md={15}
                     xs={24}
                 >
-                    <Carousel autoplay>
-                        <div className="rightPanel-services">
+                    <Carousel autoplay className="carousel-panel-services">
+                        <div className="left-panel-services-text">
                             <h1>{abstract}</h1>
-                            <h6></h6>
                             <span>{description}</span>
                         </div>
-                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                            <img src={test1} width={400} height={400}/>
+                        <div className="left-panel-services-image">
+                            <Image width={550} src={services_1} />
                         </div>
-                        <div>
-                            <img src={test2} width={400} height={400}/>
+                        <div className="left-panel-services-image">
+                            <Image width={550} src={services_2} />
                         </div>
-                        <div>
-                            <img src={test3} width={400} height={400}/>
+                        <div className="left-panel-services-image">
+                            <Image width={550} src={services_3} />
+                        </div>
+                        <div className="left-panel-services-image">
+                            <Image width={550} src={services_4} />
                         </div>
                     </Carousel>
                 </Col>
-                <Col md={9} xs={24} className="leftPanel-services">
+                <Col md={9} xs={24} className="right-panel-services">
                 </Col>
             </Row>
         </div>

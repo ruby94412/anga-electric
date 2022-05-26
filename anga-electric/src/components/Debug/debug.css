@@ -1,23 +1,37 @@
 .backgroundPanel-debug {
-    background-image: url('./designBackground.jpg');
+    background-image: linear-gradient(to right, rgba(107, 138, 93, 0.2) 100%, rgba(107, 138, 93, 0.2) 100%), url('../../images/debug/debug-header-background.webp');
     height: 600px;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     color: #0e4f04;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.rightPanel-debug {
+.carousel-panel {
     background-color: rgb(169, 204, 155);
-    padding: 150px 5% 50px 5%;
-    height: 500px;
 }
 
-.leftPanel-debug {
-    background-image: url('./design.jpeg');
+.left-panel-debug-text {
+    padding: 0 5% 0 5%;
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.left-panel-debug-image {
+    padding: 0 5% 0 5%;
+    height: 500px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-panel-debug {
+    background-image: url('../../images/debug/debug-right-panel.jpg');
+    height: 500px;
+    background-size: cover;
+    background-position: center;
 }

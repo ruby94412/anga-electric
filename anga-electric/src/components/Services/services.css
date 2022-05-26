@@ -1,5 +1,5 @@
 .backgroundPanel-services {
-    background-image: url('./services_2.webp');
+    background-image: linear-gradient(to right, rgba(107, 138, 93, 0.2) 100%, rgba(107, 138, 93, 0.2) 100%), url('../../images/services/services-header-background.webp');
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,15 +10,30 @@
     justify-content: center;
 }
 
-.leftPanel-services {
-    background-image: url('./services.jpeg');
+.carousel-panel-services {
+    background-color: rgb(169, 204, 155);
+}
+
+.left-panel-services-text {
+    /* background-color: rgb(169, 204, 155); */
+    padding: 0 5% 0 5%;
+    height: 500px;
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.left-panel-services-image {
+    /* background-color: rgb(169, 204, 155); */
+    padding: 0 5% 0 5%;
+    height: 500px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-panel-services {
+    background-image: url('../../images/services/services-right-panel.jpeg');
     height: 500px;
     background-size: cover;
     background-position: bottom;
-}
-
-.rightPanel-services {
-    background-color: rgb(169, 204, 155);
-    padding: 150px 5% 50px 5%;
-    height: 500px;
 }

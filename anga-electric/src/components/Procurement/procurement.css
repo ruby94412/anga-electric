@@ -1,5 +1,5 @@
 .backgroundPanel-procurement {
-    background-image: url('./procurementHeader.jpg');
+    background-image: linear-gradient(to right, rgba(107, 138, 93, 0.2) 100%, rgba(107, 138, 93, 0.2) 100%), url('../../images/procurement/procurement-header-background.jpg');
     height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,15 +10,28 @@
     justify-content: center;
 }
 
-.leftPanel-procurement {
-    background-image: url('./procurement.jpeg');
+.carousel-panel {
+    background-color: rgb(169, 204, 155);
+}
+
+.left-panel-procurement-text {
+    padding: 0 5% 0 5%;
+    height: 500px;
+    display: table-cell !important;
+    vertical-align: middle;
+}
+
+.left-panel-procurement-image {
+    padding: 0 5% 0 5%;
+    height: 500px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-panel-procurement {
+    background-image: url('../../images/procurement/procurement-right-panel.jpeg');
     height: 500px;
     background-size: cover;
     background-position: left;
-}
-
-.rightPanel-procurement {
-    background-color: rgb(169, 204, 155);
-    padding: 150px 5% 50px 5%;
-    height: 500px;
 }

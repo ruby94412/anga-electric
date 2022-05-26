@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import {Steps, Progress, Row, Col} from 'antd';
 import {useState, useEffect, useContext} from 'react';
 import {

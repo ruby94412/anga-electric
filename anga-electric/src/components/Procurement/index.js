@@ -1,11 +1,12 @@
+/* eslint-disable import/no-anonymous-default-export */
 import {useContext} from 'react';
-import {Row, Col, Carousel} from 'antd';
+import {Row, Col, Carousel, Image} from 'antd';
 import ProgressSteps from '../ProgressSteps';
 import {TextData} from '../../App';
-import './procurement.css'
-import test1 from '../test1.jpg';
-import test2 from '../test2.jpeg';
-import test3 from '../test3.jpeg';
+import './procurement.css';
+import procurement_1 from '../../images/procurement/procurement-carousel-1.jpeg';
+import procurement_2 from '../../images/procurement/procurement-carousel-2.jpeg';
+import procurement_3 from '../../images/procurement/procurement-carousel-3.jpeg';
 
 export default () => {
     const data = useContext(TextData);
@@ -15,29 +16,28 @@ export default () => {
             <div className="backgroundPanel-procurement">
                 <ProgressSteps current={1} />
             </div>
-            <Row justify="end">
+            <Row>
                 <Col
                     md={15}
                     xs={24}
                 >
-                    <Carousel autoplay>
-                        <div className="rightPanel-procurement">
+                    <Carousel className="carousel-panel">
+                        <div className="left-panel-procurement-text">
                             <h1>{abstract}</h1>
-                            <h6></h6>
                             <span>{description}</span>
                         </div>
-                        <div style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                            <img src={test1} width={400} height={400}/>
+                        <div className="left-panel-procurement-image">
+                            <Image width={550} src={procurement_1} />
                         </div>
-                        <div>
-                            <img src={test2} width={400} height={400}/>
+                        <div className="left-panel-procurement-image">
+                            <Image width={550} src={procurement_2} />
                         </div>
-                        <div>
-                            <img src={test3} width={400} height={400}/>
+                        <div className="left-panel-procurement-image">
+                            <Image width={550} src={procurement_3} />
                         </div>
                     </Carousel>
                 </Col>
-                <Col md={9} xs={24} className="leftPanel-procurement">
+                <Col md={9} xs={24} className="right-panel-procurement">
                 </Col>
             </Row>
         </div>
