@@ -5,6 +5,7 @@ import {
   Route,
   Navigate
 } from 'react-router-dom';
+import { Affix, Button } from 'antd';
 import Header from './components/Header';
 import Main from './pages/Main';
 import Design from './pages/Design';

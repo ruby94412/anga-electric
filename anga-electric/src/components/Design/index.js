@@ -6,6 +6,7 @@ import {TextData} from '../../App';
 import './design.css';
 import design_1 from '../../images/design/design-carousel-1.jpeg';
 import design_2 from '../../images/design/design-carousel-2.jpeg';
+import design_3 from '../../images/design/design-carousel-3.jpeg';
 
 export default () => {
     const data = useContext(TextData);
@@ -30,6 +31,9 @@ export default () => {
                         </div>
                         <div className="left-panel-design-image">
                             <Image width={600} src={design_2} />
+                        </div>
+                        <div className="left-panel-design-image">
+                            <Image width={600} src={design_3} />
                         </div>
                     </Carousel>
                 </Col>
