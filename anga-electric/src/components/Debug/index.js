@@ -3,6 +3,7 @@ import {useContext} from 'react';
 import {Row, Col, Carousel, Image} from 'antd';
 import ProgressSteps from '../ProgressSteps';
 import {TextData} from '../../App';
+import {getVerticalAlginText} from '../utilities';
 import './debug.css';
 import debug_1 from '../../images/debug/debug-carousel-1.jpeg';
 import debug_2 from '../../images/debug/debug-carousel-2.jpeg';
@@ -28,12 +29,15 @@ export default () => {
                         </div>
                         <div className="left-panel-debug-image">
                             <Image width={600} src={debug_1} />
+                            {getVerticalAlginText()}
                         </div>
                         <div className="left-panel-debug-image">
                             <Image width={600} src={debug_2} />
+                            {getVerticalAlginText()}
                         </div>
                         <div className="left-panel-debug-image">
                             <Image width={600} src={debug_3} />
+                            {getVerticalAlginText()}
                         </div>
                     </Carousel>
                 </Col>

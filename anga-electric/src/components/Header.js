@@ -1,9 +1,15 @@
-import {useContext, useState} from 'react';
+/* eslint-disable no-empty-pattern */
+import {
+    useContext,
+    useState,
+    forwardRef,
+    useImperativeHandle
+} from 'react';
 import {useNavigate} from "react-router-dom";
 import {Menu, Modal} from 'antd';
 import {TextData} from '../App';
 import Contact from './Contact';
-const Header = () => {
+const Header = forwardRef(({}, ref) => {
     const [visible, setVisible] = useState(false);
     const data = useContext(TextData);
     const navigate = useNavigate();
@@ -15,6 +21,9 @@ const Header = () => {
         { label: data.debug.title, key: data.debug.path },
         { label: '联系我们', key: 'contact'}
     ];
+    useImperativeHandle(ref, () => ({
+        openModal: () => {setVisible(true);}
+    }));
     const onMenuClick = ({key}) => {
         if (key !== 'contact') {
             navigate(`/${key}`);
@@ -40,6 +49,6 @@ const Header = () => {
             </Modal>
         </div>
     );
-};
+});
 
 export default Header;

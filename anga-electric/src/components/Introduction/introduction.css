@@ -5,7 +5,7 @@
     background-position: center;
     text-align: start;
     padding-left: 15%;
-    padding-top: 150px;
+    padding-top: 100px;
 }
 
 .introduction-text {
@@ -22,5 +22,12 @@
 
 .introduction-text a:hover {
     font-size: 100px;
+    color: white;
+}
+
+.introduction-text-company-name {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
     color: white;
 }

@@ -48,15 +48,20 @@ export const ContactUs = ({
                     <Col span={18} style={{padding: '10px'}}><Input.TextArea rows={5} name="message"/></Col>
                 </Row>
             </form>
-            <div style={{textAlign: 'center', padding: '10px'}}>
-                <ReactSimpleVerify width={300} success={onVerficationComplete} ref={verify} />
-                <Button
-                    style={{marginTop: '20px'}}
-                    type="primary"
-                    onClick={sendEmail}
-                    disabled={!verified}
-                >提交</Button>
-            </div>
+            <Row>
+                <Col span={24} style={{display: 'flex', justifyContent: 'center', padding: '10px'}}>
+                    <ReactSimpleVerify success={onVerficationComplete} ref={verify} />
+                </Col>
+                <Col span={24} style={{display: 'flex', justifyContent: 'center', padding: '10px'}}>
+                    <Button
+                        type="primary"
+                        onClick={sendEmail}
+                        disabled={!verified}
+                    >提交</Button>
+                </Col>
+            </Row>
+                
+                
         </>
     );
 };

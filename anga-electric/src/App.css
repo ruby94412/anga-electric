@@ -68,6 +68,23 @@
   font-size: 15px;
 }
 
+.affix-position {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 2;
+}
+
+.message-icon {
+  font-size: 30px;
+  color: white;
+}
+
+.message-icon :hover {
+  color: #3e3f42;
+}
+
+
 .ant-carousel .slick-list .slick-slide > div > div {
   vertical-align: middle;
 }

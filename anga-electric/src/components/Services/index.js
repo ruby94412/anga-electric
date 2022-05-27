@@ -3,6 +3,7 @@ import {useContext} from 'react';
 import {Row, Col, Carousel, Image} from 'antd';
 import ProgressSteps from '../ProgressSteps';
 import {TextData} from '../../App';
+import {getVerticalAlginText} from '../utilities';
 import './services.css';
 import services_1 from '../../images/services/services-carousel-1.jpeg';
 import services_2 from '../../images/services/services-carousel-2.jpeg';
@@ -22,22 +23,26 @@ export default () => {
                     md={15}
                     xs={24}
                 >
-                    <Carousel autoplay className="carousel-panel-services">
+                    <Carousel className="carousel-panel-services">
                         <div className="left-panel-services-text">
                             <h1>{abstract}</h1>
                             <span>{description}</span>
                         </div>
                         <div className="left-panel-services-image">
                             <Image width={550} src={services_1} />
+                            {getVerticalAlginText()}
                         </div>
                         <div className="left-panel-services-image">
                             <Image width={550} src={services_2} />
+                            {getVerticalAlginText()}
                         </div>
                         <div className="left-panel-services-image">
                             <Image width={550} src={services_3} />
+                            {getVerticalAlginText()}
                         </div>
                         <div className="left-panel-services-image">
                             <Image width={550} src={services_4} />
+                            {getVerticalAlginText()}
                         </div>
                     </Carousel>
                 </Col>

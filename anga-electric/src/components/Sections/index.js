@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 import {useContext} from 'react';
 import {Row, Col} from 'antd';
 import {
