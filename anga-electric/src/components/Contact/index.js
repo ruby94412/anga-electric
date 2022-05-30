@@ -40,12 +40,18 @@ export const ContactUs = ({
         <>
             <form ref={form}>
                 <Row align="middle">
-                    <Col span={6}><label>姓名/公司名称</label></Col>
-                    <Col span={18} style={{padding: '10px'}}><Input name="user_name"/></Col>
-                    <Col span={6}><label>联系方式</label></Col>
-                    <Col span={18} style={{padding: '10px'}}><Input placeholder='手机或电子邮箱' name="user_email"/></Col>
-                    <Col span={6}><label>留言</label></Col>
-                    <Col span={18} style={{padding: '10px'}}><Input.TextArea rows={5} name="message"/></Col>
+                    <Col span={6}><label>您的称呼</label></Col>
+                    <Col span={18} style={{padding: '10px'}}>
+                        <Input placeholder='您的姓名或公司名称' name="user_name"/>
+                    </Col>
+                    <Col span={6}><label>您的联系方式</label></Col>
+                    <Col span={18} style={{padding: '10px'}}>
+                        <Input placeholder='您的手机或电子邮箱' name="user_email"/>
+                    </Col>
+                    <Col span={6}><label>您的留言</label></Col>
+                    <Col span={18} style={{padding: '10px'}}>
+                        <Input.TextArea placeholder='请留言联系我们获取报价和产品信息' rows={5} name="message"/>
+                    </Col>
                 </Row>
             </form>
             <Row>

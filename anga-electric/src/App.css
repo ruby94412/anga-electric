@@ -78,6 +78,7 @@
 .message-icon {
   font-size: 30px;
   color: white;
+  animation: message-icon-size-change infinite 3s linear;
 }
 
 .message-icon :hover {
@@ -96,3 +97,16 @@
     transform: rotate(360deg);
   }
 }
+
+
+@keyframes message-icon-size-change {
+  0% {font-size: 30px;}
+  50% {font-size: 40px;}
+  100% {font-size: 30px;}
+}
+
+/* @keyframes message-icon-size-change {
+  0% {color: white;}
+  50% {color: #3e3f42;}
+  100% {color: white;}
+} */
