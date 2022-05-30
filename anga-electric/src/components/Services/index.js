@@ -23,7 +23,7 @@ export default () => {
                     md={15}
                     xs={24}
                 >
-                    <Carousel className="carousel-panel-services">
+                    <Carousel className="carousel-panel-services" autoplay autoplaySpeed={3000}>
                         <div className="left-panel-services-text">
                             <h1>{abstract}</h1>
                             <span>{description}</span>

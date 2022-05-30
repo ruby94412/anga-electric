@@ -21,7 +21,7 @@ export default () => {
                 <Row>
                     <Col lg={16} xs={24} style={{paddingTop: '50px'}}>
                         <span>联系电话：021-64595969</span><br></br>
-                        <span>门市地址：上海市青浦区北青公路6598号F1-113号</span>
+                        <span>营销地址：上海市青浦区北青公路6598号F1-113号</span>
                     </Col>
                     <Col lg={8} xs={24}><img src={qrCode} className="qrCode" /></Col>
                 </Row>

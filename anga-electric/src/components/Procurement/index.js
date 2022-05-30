@@ -23,7 +23,7 @@ export default () => {
                     xs={24}
                 >
                     <Carousel className="carousel-panel">
-                        <div className="left-panel-procurement-text">
+                        <div className="left-panel-procurement-text" autoplay autoplaySpeed={3000}>
                             <h1>{abstract}</h1>
                             <span>{description}</span>
                         </div>
