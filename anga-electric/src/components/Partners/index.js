@@ -26,6 +26,9 @@ export default () => {
                     <Col lg={8} xs={24}><img src={qrCode} className="qrCode" /></Col>
                 </Row>
             </Col>
+            <Col span={24}>
+                <a href="https://beian.miit.gov.cn/" target="_blank" style={{color: 'white'}}>沪ICP备2022013665号-1</a>
+            </Col>
         </Row>
     );
 };
